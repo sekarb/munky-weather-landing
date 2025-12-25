@@ -73,7 +73,7 @@ export default function ScreenshotShowcase({ dict }: { dict: Dictionary }) {
                 {/* iPhone mockup frame */}
                 <div className="relative h-[600px] w-[280px] rounded-[3rem] bg-black p-2 shadow-2xl ring-1 ring-white/20">
                   {/* Notch */}
-                  <div className="absolute left-1/2 top-2 z-10 h-6 w-32 -translate-x-1/2 rounded-b-3xl bg-black" />
+                  <div className="absolute left-1/2 top-4 z-10 h-6 w-22 -translate-x-1/2 rounded-3xl bg-black" />
 
                   {/* Screen */}
                   <div className="relative h-full w-full overflow-hidden rounded-[2.5rem] bg-white">
@@ -92,16 +92,16 @@ export default function ScreenshotShowcase({ dict }: { dict: Dictionary }) {
           </div>
 
           {/* Navigation dots */}
-          <div className="mt-8 flex justify-center gap-2">
+          <div className="mt-8 flex justify-center gap-3">
             {screenshots.map((_, index) => (
               <button
                 key={index}
                 onClick={() => scrollToIndex(index)}
                 className={cn(
-                  'h-2 rounded-full transition-all duration-300',
+                  'h-3 rounded-full transition-all duration-300',
                   activeIndex === index
-                    ? 'w-8 bg-white'
-                    : 'w-2 bg-white/40 hover:bg-white/60'
+                    ? 'w-10 bg-white'
+                    : 'w-3 bg-white/40 hover:bg-white/60'
                 )}
                 aria-label={`Go to screenshot ${index + 1}`}
               />
