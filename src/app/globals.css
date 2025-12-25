@@ -123,3 +123,77 @@
     @apply bg-background text-foreground;
   }
 }
+
+/* Weather-themed gradients */
+:root {
+  /* Gradient colors for weather theme */
+  --gradient-sky-start: oklch(0.85 0.12 235);
+  --gradient-sky-end: oklch(0.95 0.08 250);
+  --gradient-sunset-start: oklch(0.75 0.18 35);
+  --gradient-sunset-mid: oklch(0.65 0.15 15);
+  --gradient-sunset-end: oklch(0.55 0.12 285);
+
+  /* Feature accent colors */
+  --feature-blue: oklch(0.60 0.15 235);
+  --feature-orange: oklch(0.70 0.16 35);
+  --feature-purple: oklch(0.65 0.14 285);
+  --feature-green: oklch(0.65 0.15 145);
+}
+
+.dark {
+  /* Darker gradients for dark mode */
+  --gradient-sky-start: oklch(0.35 0.12 235);
+  --gradient-sky-end: oklch(0.25 0.08 250);
+  --gradient-sunset-start: oklch(0.45 0.18 35);
+  --gradient-sunset-mid: oklch(0.35 0.15 15);
+  --gradient-sunset-end: oklch(0.30 0.12 285);
+
+  /* Adjusted feature colors for dark mode */
+  --feature-blue: oklch(0.50 0.15 235);
+  --feature-orange: oklch(0.60 0.16 35);
+  --feature-purple: oklch(0.55 0.14 285);
+  --feature-green: oklch(0.55 0.15 145);
+}
+
+/* Gradient utility classes */
+.gradient-sky {
+  background: linear-gradient(to bottom, var(--gradient-sky-start), var(--gradient-sky-end));
+}
+
+.gradient-sunset {
+  background: linear-gradient(135deg, var(--gradient-sunset-start), var(--gradient-sunset-mid), var(--gradient-sunset-end));
+}
+
+.gradient-weather {
+  background: linear-gradient(to bottom right, var(--gradient-sky-start), oklch(0.70 0.12 280), var(--gradient-sunset-start));
+}
+
+/* Hide scrollbar utility */
+.scrollbar-hide {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
+/* Smooth scroll behavior */
+.scroll-smooth {
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+}
+
+/* Floating animation */
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+}
+
+.animate-float {
+  animation: float 3s ease-in-out infinite;
+}
