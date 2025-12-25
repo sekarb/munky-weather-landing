@@ -3,6 +3,7 @@ import type { Dictionary, Locale } from '@/lib/i18n';
 import AppStoreButton from '@/components/common/app-store-button';
 import LanguageSwitcher from '@/components/common/language-switcher';
 import ThemeToggle from '@/components/common/theme-toggle';
+import ScrollIndicator from '@/components/common/scroll-indicator';
 
 export default function Hero({ dict, lang }: { dict: Dictionary; lang: Locale }) {
   return (
@@ -60,6 +61,9 @@ export default function Hero({ dict, lang }: { dict: Dictionary; lang: Locale })
           <AppStoreButton text={dict.hero.cta} className="text-lg" />
         </div>
       </div>
+
+      {/* Scroll Indicator */}
+      <ScrollIndicator />
 
       {/* Bottom fade */}
       <div className="absolute bottom-0 h-32 w-full bg-gradient-to-t from-background to-transparent" />

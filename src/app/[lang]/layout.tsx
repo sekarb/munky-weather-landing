@@ -3,6 +3,7 @@ import { notFound } from 'next/navigation';
 import { Geist, Geist_Mono } from 'next/font/google';
 import { getDictionary, isValidLocale, type Locale, locales } from '@/lib/i18n';
 import { SITE_URL } from '@/lib/constants';
+import { ThemeProvider } from '@/contexts/theme-context';
 
 const geistSans = Geist({
   variable: '--font-geist-sans',
@@ -91,7 +92,7 @@ export default async function LangLayout({
         <link rel="alternate" hrefLang="x-default" href={`${SITE_URL}/en`} />
       </head>
       <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
-        {children}
+        <ThemeProvider>{children}</ThemeProvider>
       </body>
     </html>
   );
