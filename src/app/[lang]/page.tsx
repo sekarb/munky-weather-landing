@@ -36,9 +36,9 @@ export default async function LandingPage({
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
-      <Header lang={lang} dict={dict} />
+      <Header lang={lang} />
       <main>
-        <Hero dict={dict} />
+        <Hero dict={dict} lang={lang} />
         <Features dict={dict} />
         <ScreenshotShowcase dict={dict} />
         <CtaSection dict={dict} />
