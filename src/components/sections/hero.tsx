@@ -27,8 +27,8 @@ export default function Hero({ dict, lang }: { dict: Dictionary; lang: Locale })
       <div className="container relative z-10 mx-auto px-4 py-20 text-center">
         {/* App icon */}
         <div className="mb-8 flex justify-center">
-          <div className="animate-float">
-            <div className="relative h-24 w-24 md:h-32 md:w-32">
+          <div>
+            <div className="relative h-20 w-20 md:h-32 md:w-32">
               <Image
                 src="/app_icon_1024.png"
                 alt="Munky Weather App Icon"

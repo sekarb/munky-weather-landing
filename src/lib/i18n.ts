@@ -3,6 +3,12 @@ export type Locale = 'en' | 'es';
 export const locales: Locale[] = ['en', 'es'];
 export const defaultLocale: Locale = 'en';
 
+export interface Review {
+  rating: number;
+  reviewer: string;
+  text: string;
+}
+
 export interface Dictionary {
   metadata: {
     title: string;
@@ -14,6 +20,7 @@ export interface Dictionary {
     tagline: string;
     subtitle: string;
     cta: string;
+    reviews: Review[];
   };
   features: {
     title: string;
@@ -24,6 +31,9 @@ export interface Dictionary {
     }>;
   };
   showcase: {
+    title: string;
+  };
+  gallery: {
     title: string;
   };
   cta: {

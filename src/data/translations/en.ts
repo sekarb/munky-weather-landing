@@ -14,6 +14,18 @@ const en: Dictionary = {
     subtitle:
       'Get weather for any corner of the globe. No more settling for nearby city forecasts.',
     cta: 'Download on the App Store',
+    reviews: [
+      {
+        rating: 5,
+        reviewer: 'Stillness Seeker',
+        text: 'Munky Weather is such a pleasure to use. No ads or jarring news articles/videos, just the weather with all the details you need and none of the flashing annoying things that slow you down from actually getting the weather!',
+      },
+      {
+        rating: 5,
+        reviewer: 'Cathy Donaghy',
+        text: 'Just downloaded this app and it\'s one of the best weather apps I have come across in sometime. The interface has been well thought out by someone who actually uses weather apps and clearly has an interest in weather itself.',
+      },
+    ],
   },
   features: {
     title: 'Key Features',
@@ -75,6 +87,9 @@ const en: Dictionary = {
     ],
   },
   showcase: {
+    title: 'See It In Action',
+  },
+  gallery: {
     title: 'See It In Action',
   },
   cta: {
