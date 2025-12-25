@@ -1,0 +1,24 @@
+# Build folders
+.next/
+dist/
+out/
+build/
+
+# Dependencies
+node_modules/
+
+# Static assets
+public/
+
+# Environment files and logs
+.env*
+*.log
+npm-debug.log*
+
+# Lock files (prevents unnecessary git diffs)
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+
+# OS files
+.DS_Store
