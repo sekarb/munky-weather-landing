@@ -1,8 +1,9 @@
 # Munky Weather Landing Page
 
-A modern, bilingual landing page for [Munky Weather](https://munkyweather.app), an iOS weather app that provides accurate forecasts for any location on Earth—not just cities, but peaks, lakes, and campgrounds too.
+A modern, bilingual landing page for Munky Weather, an iOS weather app that provides accurate forecasts for any location on Earth—not just cities, but peaks, lakes, and campgrounds too.
 
 **Live Site:** [munkyweather.app](https://munkyweather.app)
+
 **App Store:** [Download Munky Weather](https://apps.apple.com/app/id6467945276)
 
 ## Overview
