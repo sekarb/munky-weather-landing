@@ -27,15 +27,15 @@ const iconMap: Record<string, LucideIcon> = {
 
 export default function Features({ dict }: { dict: Dictionary }) {
   return (
-    <section className="py-12 md:py-16 bg-background">
+    <section className="bg-background py-8 md:py-12">
       <div className="container mx-auto px-4">
-        <div className="mb-10 md:mb-12 text-center">
-          <h2 className="mb-3 text-3xl font-bold text-foreground md:text-4xl">
+        <div className="mb-6 text-center md:mb-8">
+          <h2 className="text-foreground mb-15 text-3xl font-bold md:text-4xl">
             {dict.features.title}
           </h2>
         </div>
 
-        <div className="grid gap-4 md:gap-6 md:grid-cols-2 lg:grid-cols-3">
+        <div className="grid gap-8 md:grid-cols-2 md:gap-10 lg:grid-cols-3">
           {dict.features.items.map((feature, index) => {
             const Icon = iconMap[feature.icon] || Lightbulb;
             const colorClasses = [
@@ -55,16 +55,20 @@ export default function Features({ dict }: { dict: Dictionary }) {
                 key={index}
                 className="group transition-all duration-300 hover:-translate-y-1 hover:shadow-lg"
               >
-                <CardContent className="p-4 md:p-5">
-                  <div className="mb-4 flex items-start gap-4">
-                    <div className={`rounded-lg bg-muted p-2.5 ${colorClasses[index % colorClasses.length]}`}>
-                      <Icon className="h-5 w-5" />
+                <CardContent className="relative px-4 py-2 md:px-5 md:pb-5">
+                  <div className="absolute -top-12 left-1/2 -translate-x-1/2">
+                    <div
+                      className={`bg-muted rounded-lg p-3 shadow-md ${colorClasses[index % colorClasses.length]}`}
+                    >
+                      <Icon className="h-6 w-6" />
                     </div>
                   </div>
-                  <h3 className="mb-1.5 text-lg font-semibold text-foreground">
+                  <h3 className="text-foreground mb-1 text-center text-lg font-semibold">
                     {feature.title}
                   </h3>
-                  <p className="text-sm leading-relaxed text-muted-foreground">{feature.description}</p>
+                  <p className="text-muted-foreground text-center text-sm leading-relaxed">
+                    {feature.description}
+                  </p>
                 </CardContent>
               </Card>
             );
