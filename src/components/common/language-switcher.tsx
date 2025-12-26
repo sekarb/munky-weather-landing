@@ -1,18 +1,21 @@
 'use client';
 
 import Link from 'next/link';
-import { usePathname } from 'next/navigation';
+import { usePathname, useSearchParams } from 'next/navigation';
 import { Globe } from 'lucide-react';
 import { cn } from '@/lib/utils';
 import type { Locale } from '@/lib/i18n';
 
 export default function LanguageSwitcher({ currentLang }: { currentLang: Locale }) {
   const pathname = usePathname();
+  const searchParams = useSearchParams();
   const otherLang: Locale = currentLang === 'en' ? 'es' : 'en';
 
-  // Replace the language in the current path
+  // Replace the language in the current path and preserve query params
   const getOtherLangPath = () => {
-    return pathname.replace(`/${currentLang}`, `/${otherLang}`);
+    const newPath = pathname.replace(`/${currentLang}`, `/${otherLang}`);
+    const query = searchParams?.toString() ? `?${searchParams.toString()}` : '';
+    return `${newPath}${query}`;
   };
 
   return (

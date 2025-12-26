@@ -1,8 +1,9 @@
 import { CONTACT_EMAIL, LAST_UPDATED } from '@/lib/constants';
 
-export default (
-  <>
-    <h1>Política de Privacidad para Munky Weather</h1>
+export default function PrivacyPolicyES(hideContact = false) {
+  return (
+    <>
+      <h1>Política de Privacidad para Munky Weather</h1>
     <p>
       <strong>Última Actualización:</strong> {LAST_UPDATED}
     </p>
@@ -133,15 +134,20 @@ export default (
       No es posible optar por no participar en ninguna de las otras integraciones de terceros mencionadas anteriormente, ya que son cruciales para la funcionalidad central de la aplicación.
     </p>
 
-    <h2>7. Cambios a Esta Política</h2>
-    <p>
-      Podríamos actualizar nuestra Política de Privacidad ocasionalmente. Si ocurre algún cambio, publicaremos rápidamente la nueva política en esta página. Se recomienda revisar esta Política de Privacidad periódicamente para mantenerse informado sobre nuestro compromiso con tu privacidad.
-    </p>
+      <h2>7. Cambios a Esta Política</h2>
+      <p>
+        Podríamos actualizar nuestra Política de Privacidad ocasionalmente. Si ocurre algún cambio, publicaremos rápidamente la nueva política en esta página. Se recomienda revisar esta Política de Privacidad periódicamente para mantenerse informado sobre nuestro compromiso con tu privacidad.
+      </p>
 
-    <h2>8. Contáctanos</h2>
-    <p>
-      Para preguntas, comentarios o inquietudes sobre esta Política de Privacidad, por favor contáctanos en:{' '}
-      <a href={`mailto:${CONTACT_EMAIL}`}>{CONTACT_EMAIL}</a>
-    </p>
-  </>
-);
+      {!hideContact && (
+        <>
+          <h2>8. Contáctanos</h2>
+          <p>
+            Para preguntas, comentarios o inquietudes sobre esta Política de Privacidad, por favor contáctanos en:{' '}
+            <a href={`mailto:${CONTACT_EMAIL}`}>{CONTACT_EMAIL}</a>
+          </p>
+        </>
+      )}
+    </>
+  );
+}

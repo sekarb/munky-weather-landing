@@ -31,18 +31,23 @@ export async function generateMetadata({
 
 export default async function PrivacyPolicyPage({
   params,
+  searchParams,
 }: {
   params: Promise<{ lang: Locale }>;
+  searchParams: Promise<{ ref?: string }>;
 }) {
   const { lang } = await params;
-  const content = await getPrivacyPolicy(lang);
+  const { ref } = await searchParams;
+  const hideContact = ref === 'upwork';
+  const content = await getPrivacyPolicy(lang, hideContact);
+  const backToHomeUrl = `/${lang}${ref ? `?ref=${ref}` : ''}`;
 
   return (
     <div className="min-h-screen bg-background">
       <header className="border-b border-border">
         <div className="container mx-auto px-4 py-4">
           <Link
-            href={`/${lang}`}
+            href={backToHomeUrl}
             className="inline-flex items-center gap-2 text-sm text-muted-foreground transition-colors hover:text-foreground"
           >
             <ChevronLeft className="h-4 w-4" />

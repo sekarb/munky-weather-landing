@@ -9,10 +9,13 @@ import CtaSection from '@/components/sections/cta-section';
 
 export default async function LandingPage({
   params,
+  searchParams,
 }: {
   params: Promise<{ lang: Locale }>;
+  searchParams: Promise<{ ref?: string }>;
 }) {
   const { lang } = await params;
+  const { ref } = await searchParams;
   const dict = await getDictionary(lang);
 
   // Structured data for SEO
@@ -43,7 +46,7 @@ export default async function LandingPage({
         <ScreenshotGallery dict={dict} />
         <CtaSection dict={dict} />
       </main>
-      <Footer lang={lang} dict={dict} />
+      <Footer lang={lang} dict={dict} refSrc={ref} />
     </>
   );
 }
