@@ -17,7 +17,7 @@ export default function CtaSection({ dict }: { dict: Dictionary }) {
           {dict.cta.subtitle}
         </p>
         <div className="flex justify-center">
-          <AppStoreButton text={dict.cta.button} className="text-lg" />
+          <AppStoreButton className="text-lg" />
         </div>
       </div>
     </section>

@@ -68,7 +68,7 @@ export default function HeroWithScreenshots({ dict, lang }: HeroWithScreenshotsP
 
             {/* CTA Button */}
             <div className="mb-9 flex justify-center lg:justify-start">
-              <AppStoreButton text={dict.hero.cta} className="text-lg" />
+              <AppStoreButton className="text-lg" />
             </div>
 
             {/* Reviews Card */}
