@@ -1,16 +1,17 @@
-import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
-import "./globals.css";
-import { SITE_URL } from "@/lib/constants";
+import type { Metadata } from 'next';
+import { Geist, Geist_Mono } from 'next/font/google';
+import './globals.css';
+import { SITE_URL } from '@/lib/constants';
+import { Analytics } from '@vercel/analytics/next';
 
 const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
+  variable: '--font-geist-sans',
+  subsets: ['latin'],
 });
 
 const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
+  variable: '--font-geist-mono',
+  subsets: ['latin'],
 });
 
 export const metadata: Metadata = {
@@ -18,8 +19,8 @@ export const metadata: Metadata = {
   alternates: {
     canonical: '/',
     languages: {
-      'en': '/en',
-      'es': '/es',
+      en: '/en',
+      es: '/es',
     },
   },
 };
@@ -32,6 +33,7 @@ export default function RootLayout({
   return (
     <>
       {children}
+      <Analytics />
     </>
   );
 }
