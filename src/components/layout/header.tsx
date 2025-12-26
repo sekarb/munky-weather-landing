@@ -3,6 +3,7 @@
 import { useState, useEffect } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
+import { useSearchParams } from 'next/navigation';
 import { cn } from '@/lib/utils';
 import type { Locale } from '@/lib/i18n';
 import LanguageSwitcher from '@/components/common/language-switcher';
@@ -10,6 +11,8 @@ import ThemeToggle from '@/components/common/theme-toggle';
 
 export default function Header({ lang }: { lang: Locale }) {
   const [isScrolled, setIsScrolled] = useState(false);
+  const searchParams = useSearchParams();
+  const query = searchParams?.toString() ? `?${searchParams.toString()}` : '';
 
   useEffect(() => {
     const handleScroll = () => {
@@ -29,7 +32,7 @@ export default function Header({ lang }: { lang: Locale }) {
       )}
     >
       <div className="container mx-auto flex h-16 items-center justify-between px-4">
-        <Link href={`/${lang}`} className="transition-opacity hover:opacity-80">
+        <Link href={`/${lang}${query}`} className="transition-opacity hover:opacity-80">
           <Image
             src="/app_icon_1024.png"
             alt="Munky Weather"
