@@ -4,7 +4,7 @@ A modern, bilingual landing page for Munky Weather, an iOS weather app that prov
 
 **Live Site:** [munkyweather.app](https://munkyweather.app)
 
-**App Store:** [Download Munky Weather](https://apps.apple.com/app/id6467945276)
+**iOS App Store Page:** [Munky Weather](https://apps.apple.com/app/id6467945276)
 
 ## Overview
 
