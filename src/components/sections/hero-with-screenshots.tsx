@@ -19,21 +19,8 @@ interface HeroWithScreenshotsProps {
 
 export default function HeroWithScreenshots({ dict, lang }: HeroWithScreenshotsProps) {
   return (
-    <section className="gradient-sunset relative flex min-h-screen items-center justify-center overflow-hidden pt-16">
-      {/* Top header row with app icon (left) and controls (right) */}
-      <div className="absolute top-4 left-4 z-20 md:top-8 md:left-8">
-        <div className="relative h-18 w-18 md:h-18 md:w-18">
-          <Image
-            src="/app_icon_1024.png"
-            alt="Munky Weather App Icon"
-            width={96}
-            height={96}
-            className="rounded-2xl shadow-2xl"
-            priority
-          />
-        </div>
-      </div>
-
+    <section className="gradient-sunset relative flex min-h-screen items-center justify-center overflow-hidden pt-2 lg:items-start lg:pt-0">
+      {/* Top header row with controls (right) */}
       {/* Floating navigation controls - top right */}
       <div className="absolute top-4 right-4 z-20 md:top-8 md:right-8">
         <div className="flex items-center gap-2 rounded-xl border border-white/20 bg-white/10 p-2 shadow-lg backdrop-blur-lg [&_a]:text-white [&_button]:text-white">
@@ -50,14 +37,24 @@ export default function HeroWithScreenshots({ dict, lang }: HeroWithScreenshotsP
       </div>
 
       {/* Main content grid */}
-      <div className="relative z-10 container mx-auto px-4 py-12 md:py-16">
+      <div className="relative z-10 container mx-auto px-4 py-12 md:py-16 lg:pt-8 lg:pb-16">
         <div className="grid items-center gap-8 lg:grid-cols-2 lg:items-start lg:gap-12">
           {/* Text Content + Reviews - order-1 on mobile (text first), order-1 on desktop */}
           <div className="order-1 text-center lg:text-left">
-            {/* Title */}
-            <h1 className="mb-4 text-4xl font-bold text-white md:text-5xl lg:text-6xl">
-              {dict.hero.title}
-            </h1>
+            {/* App icon and Title */}
+            <div className="mb-4 flex items-center justify-center gap-4 lg:justify-start">
+              <Image
+                src="/app_icon_1024.png"
+                alt="Munky Weather App Icon"
+                width={64}
+                height={64}
+                className="rounded-2xl shadow-2xl"
+                priority
+              />
+              <h1 className="text-4xl font-bold text-white md:text-5xl lg:text-6xl">
+                {dict.hero.title}
+              </h1>
+            </div>
 
             {/* Tagline */}
             <p className="mx-auto mb-3 max-w-xl text-lg font-semibold text-white/95 md:text-xl lg:mx-0">
