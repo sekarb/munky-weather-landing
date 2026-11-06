@@ -24,10 +24,10 @@ export default function PrivacyPolicyEN(hideContact = false) {
     <p>We collect your device's location to:</p>
     <ul>
       <li>
-        Provide weather information for your current location by sending coordinates, country code of the current location and the time zone of the current location to the Apple WeatherKit REST API.
+        Provide weather information for your current location by sending the coordinates of the current location to Apple WeatherKit.
       </li>
       <li>
-        Send coordinates to the rater REST API for reverse geocoding to determine the name of your location.
+        Send coordinates to Apple's reverse geocoding service to determine the name of your location.
       </li>
       <li>
         Send coordinates to the Google Elevation REST API to determine the altitude of the forecast location.
@@ -44,9 +44,6 @@ export default function PrivacyPolicyEN(hideContact = false) {
     </p>
     <p>
       We only pass the search string that you type in the location search box to the Google Places Autocomplete API.
-    </p>
-    <p>
-      We also use the Radar API to reverse geocode location coordinates to a human-readable location name. By doing so, you are also agreeing to the privacy policy of radar. We only send the current location coordinates to the Radar API.
     </p>
     <p>
       <strong>How long the location data is stored:</strong> The location collected is only used to retrieve the weather data as mentioned in the points above. The location information stays in device memory as long as the app is running. Once the app is terminated, it is cleaned from memory.
@@ -89,9 +86,6 @@ export default function PrivacyPolicyEN(hideContact = false) {
         <strong>Google Timezone REST API:</strong> To obtain the time zone of the forecast location.
       </li>
       <li>
-        <strong>Radar API for reverse geocoding and getting a human-readable location name:</strong> By using this, you are also agreeing to the privacy policy of radar. We only send the current location coordinates to the Radar API.
-      </li>
-      <li>
         <strong>Google Air quality API for getting Air quality:</strong> To obtain air quality information for given coordinates. We only send the current location coordinates to the Google API.
       </li>
     </ul>
@@ -103,14 +97,6 @@ export default function PrivacyPolicyEN(hideContact = false) {
     <p>
       <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">
         Google Privacy Policy
-      </a>
-    </p>
-    <p>
-      By using the Radar API service mentioned above, you are also agreeing to the terms and privacy policy of Radar.
-    </p>
-    <p>
-      <a href="https://radar.com/privacy" target="_blank" rel="noopener noreferrer">
-        Radar Privacy Policy
       </a>
     </p>
 

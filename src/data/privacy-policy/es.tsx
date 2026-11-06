@@ -24,10 +24,10 @@ export default function PrivacyPolicyES(hideContact = false) {
     <p>Recopilamos la ubicación de tu dispositivo para:</p>
     <ul>
       <li>
-        Proporcionar información meteorológica para tu ubicación actual enviando coordenadas, código de país de la ubicación actual y la zona horaria de la ubicación actual a la API REST de Apple WeatherKit.
+        Proporcionar información meteorológica para tu ubicación actual enviando las coordenadas de la ubicación actual a Apple WeatherKit.
       </li>
       <li>
-        Enviar coordenadas a la API REST de rater para geocodificación inversa para determinar el nombre de tu ubicación.
+        Enviar coordenadas al servicio de geocodificación inversa de Apple para determinar el nombre de tu ubicación.
       </li>
       <li>
         Enviar coordenadas a la API REST de Google Elevation para determinar la altitud de la ubicación del pronóstico.
@@ -44,9 +44,6 @@ export default function PrivacyPolicyES(hideContact = false) {
     </p>
     <p>
       Solo pasamos la cadena de búsqueda que escribes en el cuadro de búsqueda de ubicación a la API de Google Places Autocomplete.
-    </p>
-    <p>
-      También usamos la API de Radar para geocodificar inversamente coordenadas de ubicación a un nombre de ubicación legible. Al hacerlo, también estás aceptando la política de privacidad de radar. Solo enviamos las coordenadas de ubicación actual a la API de Radar.
     </p>
     <p>
       <strong>Cuánto tiempo se almacenan los datos de ubicación:</strong> La ubicación recopilada solo se usa para recuperar los datos meteorológicos como se menciona en los puntos anteriores. La información de ubicación permanece en la memoria del dispositivo mientras la aplicación se está ejecutando. Una vez que se cierra la aplicación, se limpia de la memoria.
@@ -89,9 +86,6 @@ export default function PrivacyPolicyES(hideContact = false) {
         <strong>API REST de Google Timezone:</strong> Para obtener la zona horaria de la ubicación del pronóstico.
       </li>
       <li>
-        <strong>API de Radar para geocodificación inversa y obtención de un nombre de ubicación legible:</strong> Al usar esto, también estás aceptando la política de privacidad de radar. Solo enviamos las coordenadas de ubicación actual a la API de Radar.
-      </li>
-      <li>
         <strong>API de Google Air quality para obtener Calidad del aire:</strong> Para obtener información de calidad del aire para coordenadas dadas. Solo enviamos las coordenadas de ubicación actual a la API de Google.
       </li>
     </ul>
@@ -103,14 +97,6 @@ export default function PrivacyPolicyES(hideContact = false) {
     <p>
       <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">
         Política de Privacidad de Google
-      </a>
-    </p>
-    <p>
-      Al usar el servicio de API de Radar mencionado anteriormente, también estás aceptando los términos y la política de privacidad de Radar.
-    </p>
-    <p>
-      <a href="https://radar.com/privacy" target="_blank" rel="noopener noreferrer">
-        Política de Privacidad de Radar
       </a>
     </p>
 
