@@ -43,10 +43,19 @@ export default function PrivacyPolicyEN(hideContact = false) {
       Additionally, we utilize the Google Places Autocomplete SDK to aid in autocompleting place names during your searches for locations.
     </p>
     <p>
-      We only pass the search string that you type in the location search box to the Google Places Autocomplete API.
+      We send the search text you type, and the ID of the place you pick, to Google Places to get that place's name and location.
     </p>
     <p>
       <strong>How long the location data is stored:</strong> The location collected is only used to retrieve the weather data as mentioned in the points above. The location information stays in device memory as long as the app is running. Once the app is terminated, it is cleaned from memory.
+    </p>
+    <p>
+      <strong>Widgets:</strong> If you add a Munky Weather widget, it gets your location each time iOS refreshes it, even when the app is closed, to show the weather and place name for where you are. That location is sent only to Apple WeatherKit and Apple's reverse geocoding service, and it is not stored.
+    </p>
+    <p>
+      Your settings and your saved and recent places stay on your device. Places are saved only as Google place IDs, not names or coordinates; the IDs are sent to Google Places only to show those places' names and locations when you open them. The widgets read only your unit and language settings.
+    </p>
+    <p>
+      The share button on Today and on each day creates an image of that day's forecast on your device. It is shared only where you choose to send it.
     </p>
     <p>
       We also store the count of how many times weather information has been retrieved only to request a review after the app has been used to a certain extent. This information does not leave your device and not sent anywhere. This is also not linked to any other personally identifiable information.
@@ -58,13 +67,14 @@ export default function PrivacyPolicyEN(hideContact = false) {
       <li>
         The location information is retrieved when the app is brought to the foreground [if the 'Load current location on open' option is enabled in the settings] or when you select 'Current location' on the location search screen.
       </li>
+      <li>If you add a widget, its location is retrieved each time iOS refreshes the widget.</li>
     </ul>
 
     <h2>4. How We Use Your Information</h2>
     <ul>
       <li>Deliver real-time, localized weather details.</li>
       <li>Display 10 day weather information for chosen locations.</li>
-      <li>Convert geographic coordinates into a human-readable location name using a REST API.</li>
+      <li>Convert geographic coordinates into a human-readable location name using Apple's reverse geocoding service.</li>
       <li>Determine the altitude of specific locations using the Google Elevation REST API.</li>
       <li>Determine the time zone for given locations using the Google Timezone REST API or Apple.</li>
       <li>
@@ -80,7 +90,7 @@ export default function PrivacyPolicyEN(hideContact = false) {
         <strong>Google Elevation REST API:</strong> To obtain altitude data for given coordinates. We only send the current location coordinates to the Google API.
       </li>
       <li>
-        <strong>Google Places Autocomplete SDK:</strong> To facilitate autocomplete functionality when users search for places. We only send the search string you type in the location search box to the Google API.
+        <strong>Google Places Autocomplete SDK:</strong> To facilitate autocomplete functionality when users search for places. We send the search text you type, and the ID of the place you pick, to Google Places to get that place's name and location.
       </li>
       <li>
         <strong>Google Timezone REST API:</strong> To obtain the time zone of the forecast location.

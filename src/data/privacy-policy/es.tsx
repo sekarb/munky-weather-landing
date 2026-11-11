@@ -43,10 +43,19 @@ export default function PrivacyPolicyES(hideContact = false) {
       Además, utilizamos el SDK de Google Places Autocomplete para ayudar a autocompletar nombres de lugares durante tus búsquedas de ubicaciones.
     </p>
     <p>
-      Solo pasamos la cadena de búsqueda que escribes en el cuadro de búsqueda de ubicación a la API de Google Places Autocomplete.
+      Enviamos a Google Places el texto que escribes y el ID del lugar que eliges para obtener su nombre y ubicación.
     </p>
     <p>
       <strong>Cuánto tiempo se almacenan los datos de ubicación:</strong> La ubicación recopilada solo se usa para recuperar los datos meteorológicos como se menciona en los puntos anteriores. La información de ubicación permanece en la memoria del dispositivo mientras la aplicación se está ejecutando. Una vez que se cierra la aplicación, se limpia de la memoria.
+    </p>
+    <p>
+      <strong>Widgets:</strong> Si agregas un widget de Munky Weather, este obtiene tu ubicación cada vez que iOS lo actualiza, incluso con la aplicación cerrada, para mostrar el clima y el nombre del lugar donde estás. Esa ubicación se envía solo a Apple WeatherKit y al servicio de geocodificación inversa de Apple, y no se almacena.
+    </p>
+    <p>
+      Tu configuración y tus lugares guardados y recientes permanecen en tu dispositivo. Los lugares se guardan solo como IDs de lugar de Google, no como nombres ni coordenadas; los IDs se envían a Google Places solo para mostrar el nombre y la ubicación de esos lugares cuando los abres. Los widgets solo leen tu configuración de unidades e idioma.
+    </p>
+    <p>
+      El botón de compartir de Hoy y de cada día crea en tu dispositivo una imagen del pronóstico de ese día. Solo se comparte donde tú decidas enviarla.
     </p>
     <p>
       También almacenamos el recuento de cuántas veces se ha recuperado la información meteorológica solo para solicitar una reseña después de que la aplicación se haya usado hasta cierto punto. Esta información no sale de tu dispositivo y no se envía a ninguna parte. Tampoco está vinculada a ninguna otra información de identificación personal.
@@ -58,13 +67,14 @@ export default function PrivacyPolicyES(hideContact = false) {
       <li>
         La información de ubicación se recupera cuando la aplicación se lleva al primer plano [si la opción 'Cargar ubicación actual al abrir' está habilitada en la configuración] o cuando seleccionas 'Ubicación actual' en la pantalla de búsqueda de ubicación.
       </li>
+      <li>Si agregas un widget, su ubicación se obtiene cada vez que iOS actualiza el widget.</li>
     </ul>
 
     <h2>4. Cómo Usamos Tu Información</h2>
     <ul>
       <li>Entregar detalles meteorológicos localizados en tiempo real.</li>
       <li>Mostrar información meteorológica de 10 días para ubicaciones elegidas.</li>
-      <li>Convertir coordenadas geográficas en un nombre de ubicación legible usando una API REST.</li>
+      <li>Convertir coordenadas geográficas en un nombre de ubicación legible usando el servicio de geocodificación inversa de Apple.</li>
       <li>Determinar la altitud de ubicaciones específicas usando la API REST de Google Elevation.</li>
       <li>Determinar la zona horaria para ubicaciones dadas usando la API REST de Google Timezone o Apple.</li>
       <li>
@@ -80,7 +90,7 @@ export default function PrivacyPolicyES(hideContact = false) {
         <strong>API REST de Google Elevation:</strong> Para obtener datos de altitud para coordenadas dadas. Solo enviamos las coordenadas de ubicación actual a la API de Google.
       </li>
       <li>
-        <strong>SDK de Google Places Autocomplete:</strong> Para facilitar la funcionalidad de autocompletado cuando los usuarios buscan lugares. Solo enviamos la cadena de búsqueda que escribes en el cuadro de búsqueda de ubicación a la API de Google.
+        <strong>SDK de Google Places Autocomplete:</strong> Para facilitar la funcionalidad de autocompletado cuando los usuarios buscan lugares. Enviamos a Google Places el texto que escribes y el ID del lugar que eliges para obtener su nombre y ubicación.
       </li>
       <li>
         <strong>API REST de Google Timezone:</strong> Para obtener la zona horaria de la ubicación del pronóstico.
