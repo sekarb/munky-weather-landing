@@ -19,6 +19,7 @@ export interface Dictionary {
     title: string;
     tagline: string;
     subtitle: string;
+    noAds: string;
     cta: string;
     reviews: Review[];
   };
