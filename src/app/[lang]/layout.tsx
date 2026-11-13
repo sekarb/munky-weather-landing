@@ -38,6 +38,8 @@ export async function generateMetadata({
     title: dict.metadata.title,
     description: dict.metadata.description,
     keywords: dict.metadata.keywords,
+    //Smart App Banner in Safari on iPhone; same app ID as the App Store button
+    itunes: { appId: '6467945276' },
     openGraph: {
       title: dict.metadata.title,
       description: dict.metadata.description,
@@ -66,6 +68,7 @@ export async function generateMetadata({
       languages: {
         en: `${SITE_URL}/en`,
         es: `${SITE_URL}/es`,
+        'x-default': `${SITE_URL}/en`,
       },
     },
   };
@@ -86,11 +89,6 @@ export default async function LangLayout({
 
   return (
     <html lang={lang} suppressHydrationWarning>
-      <head>
-        <link rel="alternate" hrefLang="en" href={`${SITE_URL}/en`} />
-        <link rel="alternate" hrefLang="es" href={`${SITE_URL}/es`} />
-        <link rel="alternate" hrefLang="x-default" href={`${SITE_URL}/en`} />
-      </head>
       <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
         <ThemeProvider>{children}</ThemeProvider>
       </body>

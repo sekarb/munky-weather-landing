@@ -2,17 +2,18 @@ import type { Dictionary } from '@/lib/i18n';
 
 const en: Dictionary = {
   metadata: {
-    title: 'Munky Weather - Weather for Any Location on Earth',
+    title: 'Munky Weather - Weather for Wild Places',
     description:
-      'Not Just for Cities. Explore Peaks, Lakes, and Campgrounds with Accurate Weather! Get weather for any corner of the globe.',
+      "Weather for wild places: peaks, lakes, trailheads and campgrounds, not just the nearest city. See what's coming and plan your days outside. No ads.",
     keywords:
       'weather app, mountain weather, camping weather, hiking weather, outdoor weather, location weather, accurate weather, weather forecast',
   },
   hero: {
     title: 'Munky Weather',
-    tagline: 'Not Just for Cities. Explore Peaks, Lakes, and Campgrounds with Accurate Weather!',
+    tagline: 'Weather for wild places.',
     subtitle:
-      'Get weather for any corner of the globe. No more settling for nearby city forecasts.',
+      "Peaks, lakes, trailheads and campgrounds, not just the nearest city. See what's coming and plan your days outside.",
+    noAds: 'No ads, no clutter, just the weather.',
     cta: 'Download on the App Store',
     reviews: [
       {
@@ -31,52 +32,52 @@ const en: Dictionary = {
     title: 'Key Features',
     items: [
       {
-        title: 'Practical Weather Insights, Simplified',
+        title: 'Know What\'s Coming',
         description:
-          'Munky Weather translates detailed weather data into clear, practical understanding for your everyday use.',
-        icon: 'lightbulb',
+          'Rain, snow, a storm or a hot spell in the week ahead, summed up in one line before you plan your trip.',
+        icon: 'cloud-rain-wind',
       },
       {
-        title: 'In-Depth Hourly Forecast Graphs',
+        title: 'Today and Tonight',
         description:
-          'Your weather, visualized! Anticipate every hour with graphical displays of temperature, precipitation, humidity, wind and cloud cover trends.',
+          'The rest of the day and the night ahead, with notes that matter when you camp, like condensation overnight.',
+        icon: 'tent',
+      },
+      {
+        title: 'Hour by Hour',
+        description:
+          'Charts for the next 24 hours of temperature, precipitation, humidity, wind and cloud cover.',
         icon: 'bar-chart-3',
       },
       {
-        title: 'Air Quality',
+        title: 'Plan the Days Ahead',
         description:
-          "Access the Air Quality information anywhere in the world, ensuring you're informed about the atmosphere of your chosen location.",
-        icon: 'wind',
+          'Nine days of highs, lows and the chance of rain or snow, with expected amounts.',
+        icon: 'calendar-days',
       },
       {
-        title: 'Versatile Search',
+        title: 'Widgets',
         description:
-          "Whether it's bustling cities or serene lakes, towering peaks or quiet campgrounds, get accurate weather for any location you desire.",
+          'Home Screen and Lock Screen widgets for your current location, including a look at the week ahead.',
+        icon: 'layout-grid',
+      },
+      {
+        title: 'Sun & Moon',
+        description:
+          'Sunrise, sunset and moon phase, plus when it actually gets light and dark.',
+        icon: 'sun-moon',
+      },
+      {
+        title: 'Any Place on Earth',
+        description:
+          'Peaks, lakes, trailheads or campgrounds, with times shown in the place\'s own time zone.',
         icon: 'search',
       },
       {
-        title: 'Weather Changes',
+        title: 'Elevation & Air Quality',
         description:
-          "Be ahead of Mother Nature! If it's getting windy, know when it'll calm. If clouds are gathering, discover when skies will clear.",
-        icon: 'cloud',
-      },
-      {
-        title: 'Elevation Details',
-        description:
-          'Stay informed with the altitude of your searched location, vital for adventure seekers and travelers alike.',
+          'Know the altitude and air quality of any spot you search, wherever in the world it is.',
         icon: 'mountain',
-      },
-      {
-        title: 'Local Time Display',
-        description:
-          "Automatically displays the local time of your selected location, if it's in a different time zone.",
-        icon: 'clock',
-      },
-      {
-        title: 'Beyond Sunrise & Sunset',
-        description:
-          'Not just the basic timings - know precisely when the day starts to dim or brighten.',
-        icon: 'sunrise',
       },
       {
         title: 'Weather Alerts',
@@ -93,14 +94,14 @@ const en: Dictionary = {
     title: 'See It In Action',
   },
   cta: {
-    title: 'Ready to explore the weather?',
-    subtitle: 'Download Munky Weather today and never settle for nearby city forecasts again.',
+    title: 'Heading somewhere wild?',
+    subtitle: "Download Munky Weather and see what's coming before you go.",
     button: 'Download on the App Store',
   },
   footer: {
     contact: 'For questions, comments and feedback about the app, feel free to contact me at',
     privacyPolicy: 'Privacy Policy',
-    copyright: '© 2024 Munky Weather. All rights reserved.',
+    copyright: '© 2026 Munky Weather. All rights reserved.',
   },
 };
 

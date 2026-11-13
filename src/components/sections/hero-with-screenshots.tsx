@@ -62,8 +62,13 @@ export default function HeroWithScreenshots({ dict, lang }: HeroWithScreenshotsP
             </p>
 
             {/* Subtitle */}
-            <p className="mx-auto mb-6 max-w-lg text-base text-white/80 md:text-lg lg:mx-0">
+            <p className="mx-auto mb-3 max-w-lg text-base text-white/80 md:text-lg lg:mx-0">
               {dict.hero.subtitle}
+            </p>
+
+            {/* No-ads line: reviewers praise this most, so it sits right above the button */}
+            <p className="mx-auto mb-6 max-w-lg text-base font-semibold text-white md:text-lg lg:mx-0">
+              {dict.hero.noAds}
             </p>
 
             {/* CTA Button */}

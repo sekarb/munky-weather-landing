@@ -2,18 +2,18 @@ import type { Dictionary } from '@/lib/i18n';
 
 const es: Dictionary = {
   metadata: {
-    title: 'Munky Weather - Clima para Cualquier Ubicación en la Tierra',
+    title: 'Munky Weather - El Clima para Lugares Salvajes',
     description:
-      '¡No Solo para Ciudades! ¡Explora Picos, Lagos y Campamentos con Clima Preciso! Obtén el clima para cualquier rincón del mundo.',
+      'El clima para lugares salvajes: picos, lagos, senderos y campamentos, no solo la ciudad más cercana. Mira lo que viene y planifica tus días al aire libre. Sin anuncios.',
     keywords:
       'app de clima, clima de montaña, clima de campamento, clima de senderismo, clima exterior, clima de ubicación, clima preciso, pronóstico del tiempo',
   },
   hero: {
     title: 'Munky Weather',
-    tagline:
-      '¡No Solo para Ciudades! ¡Explora Picos, Lagos y Campamentos con Clima Preciso!',
+    tagline: 'El clima para lugares salvajes.',
     subtitle:
-      'Obtén el clima para cualquier rincón del mundo. Ya no te conformes con pronósticos de ciudades cercanas.',
+      'Picos, lagos, senderos y campamentos, no solo la ciudad más cercana. Mira lo que viene y planifica tus días al aire libre.',
+    noAds: 'Sin anuncios ni distracciones, solo el clima.',
     cta: 'Descargar en App Store',
     reviews: [
       {
@@ -32,52 +32,52 @@ const es: Dictionary = {
     title: 'Características Principales',
     items: [
       {
-        title: 'Información Meteorológica Práctica, Simplificada',
+        title: 'Lo Que Viene',
         description:
-          'Munky Weather traduce datos meteorológicos detallados en una comprensión clara y práctica para tu uso diario.',
-        icon: 'lightbulb',
+          'Lluvia, nieve, una tormenta o una ola de calor en la próxima semana, resumido en una línea antes de planear tu viaje.',
+        icon: 'cloud-rain-wind',
       },
       {
-        title: 'Gráficos de Pronóstico Horario Detallados',
+        title: 'Hoy y Esta Noche',
         description:
-          '¡Tu clima, visualizado! Anticipa cada hora con gráficos de temperatura, precipitación, humedad, viento y tendencias de cobertura de nubes.',
+          'El resto del día y la noche, con notas importantes para acampar, como la condensación durante la noche.',
+        icon: 'tent',
+      },
+      {
+        title: 'Hora por Hora',
+        description:
+          'Gráficos de las próximas 24 horas de temperatura, precipitación, humedad, viento y nubosidad.',
         icon: 'bar-chart-3',
       },
       {
-        title: 'Calidad del Aire',
+        title: 'Planifica los Próximos Días',
         description:
-          'Accede a información sobre Calidad del Aire en cualquier parte del mundo, asegurándote de estar informado sobre la atmósfera de tu ubicación elegida.',
-        icon: 'wind',
+          'Nueve días de máximas, mínimas y probabilidad de lluvia o nieve, con las cantidades esperadas.',
+        icon: 'calendar-days',
       },
       {
-        title: 'Búsqueda Versátil',
+        title: 'Widgets',
         description:
-          'Ya sean ciudades bulliciosas o lagos serenos, picos imponentes o campamentos tranquilos, obtén clima preciso para cualquier ubicación que desees.',
+          'Widgets para la pantalla de inicio y la pantalla bloqueada con tu ubicación actual, incluido un vistazo a la semana.',
+        icon: 'layout-grid',
+      },
+      {
+        title: 'Sol y Luna',
+        description:
+          'Amanecer, atardecer y fase lunar, y cuándo realmente aclara y oscurece.',
+        icon: 'sun-moon',
+      },
+      {
+        title: 'Cualquier Lugar del Mundo',
+        description:
+          'Picos, lagos, senderos o campamentos, con los horarios en la zona horaria del lugar.',
         icon: 'search',
       },
       {
-        title: 'Cambios del Clima',
+        title: 'Elevación y Calidad del Aire',
         description:
-          '¡Adelántate a la Madre Naturaleza! Si se está poniendo ventoso, sabrás cuándo se calmará. Si las nubes se están juntando, descubre cuándo el cielo se despejará.',
-        icon: 'cloud',
-      },
-      {
-        title: 'Detalles de Elevación',
-        description:
-          'Mantente informado con la altitud de tu ubicación buscada, vital para aventureros y viajeros por igual.',
+          'Conoce la altitud y la calidad del aire de cualquier lugar que busques, en cualquier parte del mundo.',
         icon: 'mountain',
-      },
-      {
-        title: 'Visualización de Hora Local',
-        description:
-          'Muestra automáticamente la hora local de tu ubicación seleccionada, si está en una zona horaria diferente.',
-        icon: 'clock',
-      },
-      {
-        title: 'Más Allá del Amanecer y Atardecer',
-        description:
-          'No solo los horarios básicos - sabe precisamente cuándo el día comienza a oscurecer o aclarar.',
-        icon: 'sunrise',
       },
       {
         title: 'Alertas Meteorológicas',
@@ -94,16 +94,15 @@ const es: Dictionary = {
     title: 'Míralo en Acción',
   },
   cta: {
-    title: '¿Listo para explorar el clima?',
-    subtitle:
-      'Descarga Munky Weather hoy y nunca más te conformes con pronósticos de ciudades cercanas.',
+    title: '¿Vas a algún lugar salvaje?',
+    subtitle: 'Descarga Munky Weather y mira lo que viene antes de salir.',
     button: 'Descargar en App Store',
   },
   footer: {
     contact:
       'Para preguntas, comentarios y sugerencias sobre la aplicación, no dudes en contactarme en',
     privacyPolicy: 'Política de Privacidad',
-    copyright: '© 2024 Munky Weather. Todos los derechos reservados.',
+    copyright: '© 2026 Munky Weather. Todos los derechos reservados.',
   },
 };
 

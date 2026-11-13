@@ -1,12 +1,13 @@
 import {
   Lightbulb,
+  CloudRainWind,
+  Tent,
   BarChart3,
-  Wind,
+  CalendarDays,
+  LayoutGrid,
+  SunMoon,
   Search,
-  Cloud,
   Mountain,
-  Clock,
-  Sunrise,
   AlertTriangle,
   type LucideIcon,
 } from 'lucide-react';
@@ -15,13 +16,14 @@ import type { Dictionary } from '@/lib/i18n';
 
 const iconMap: Record<string, LucideIcon> = {
   lightbulb: Lightbulb,
+  'cloud-rain-wind': CloudRainWind,
+  tent: Tent,
   'bar-chart-3': BarChart3,
-  wind: Wind,
+  'calendar-days': CalendarDays,
+  'layout-grid': LayoutGrid,
+  'sun-moon': SunMoon,
   search: Search,
-  cloud: Cloud,
   mountain: Mountain,
-  clock: Clock,
-  sunrise: Sunrise,
   'alert-triangle': AlertTriangle,
 };
 
